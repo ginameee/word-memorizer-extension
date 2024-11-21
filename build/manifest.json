@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Word Memorizer: Save the words you want to study",
+  "version": "1.0",
+  "description": "Gallop through YouTube with Horsy.ai – your smart companion for quick, intelligent video summaries! The fastest YouTube summarizer!",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
